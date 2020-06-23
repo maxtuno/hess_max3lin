@@ -1,6 +1,6 @@
 ORiveros HESS Black-Box algorithm http://www.peqnp.com
 
-A polynomial time MAX3LIN aproximator that break the inapproximability ratio always?.
+A polynomial time MAX3LIN approximator that break the inapproximability ratio always?.
 
 usage: ./hess_max3lin <instance>
 
