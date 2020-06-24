@@ -40,7 +40,7 @@ int oracle(struct node *node) {
     for (i = 0; i < m; i++) {
         s = 0;
         for (j = 0; j < sizes[i] - 1; j++) {
-            s += node->model[abs(cls[i][j]) - 1];
+            s += node->model[abs(cls[i][j]) - 1] == cls[i][j] > 0;
         }
         c += s % 2 == abs(cls[i][sizes[i] - 1]);
     }
