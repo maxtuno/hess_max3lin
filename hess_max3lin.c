@@ -103,11 +103,7 @@ void apply() {
     node.temporal = (int *) calloc((size_t) n, sizeof(int));
     node.model = (int *) calloc((size_t) n, sizeof(int));
     node.optimal = (int *) calloc((size_t) n, sizeof(int));
-
-    for (i = 0; i < n; i++) {
-        node.model[i] = i % 2;
-    }
-
+    
     hess(&node);
 
     printf("\nc SATISFIED : %i vs %i\nc BREAK INAPPROXIMABILITY RATIO?, %s", m - cursor, m / 2, (m - cursor < m / 2 ? "YES" : "NO"));
