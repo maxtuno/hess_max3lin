@@ -93,7 +93,7 @@ void hess(struct node *node) {
         for (i = 0; i < n; i++) {
             node->model[i] = !node->model[i];
         }
-    } while (glb >= cursor);
+    } while (glb > cursor);
 }
 
 void apply() {
